@@ -73,14 +73,6 @@ echo '###'
 brew services restart --all
 
 echo '###'
-echo 'Create work dir structure'
-echo '###'
-mkdir ~/Work
-echo "<h1>My User Web Root</h1>" > ~/Work/index.html
-
-echo 'export PATH=$(brew --prefix homebrew/php/php70)/bin:$PATH:$HOME/bin:/usr/local/sbin:~/.composer/vendor/bin' >> ~/.bash_profile
-
-echo '###'
 echo 'Install Composer'
 echo '###'
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
@@ -88,3 +80,10 @@ php -r "if (hash_file('SHA384', 'composer-setup.php') === 'e115a8dc7871f15d85314
 sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 sudo chmod +x /usr/local/bin/composer
 php -r "unlink('composer-setup.php');"
+
+
+echo '###'
+echo 'Create work dir structure'
+echo '###'
+mkdir ~/Work
+echo 'export PATH=$(brew --prefix homebrew/php/php70)/bin:$PATH:$HOME/bin:/usr/local/sbin:~/.composer/vendor/bin' >> ~/.bash_profile
