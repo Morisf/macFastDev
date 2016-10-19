@@ -31,7 +31,5 @@
 * SequelPro
 * Chrome
 * PHPStorm maybe EAP
-* _Alfred 3_
+* [_Alfred 3_](https://www.alfredapp.com/)
 * _Skype_
-
-
