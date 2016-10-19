@@ -34,6 +34,7 @@ brew install httpd24 --with-privileged-ports --with-http2
 brew install php70 --with-apache
 brew install mariadb100
 brew install git
+brew install wget
 
 ### Configure Apache
 echo '###'
@@ -90,3 +91,24 @@ echo 'export PATH=$(brew --prefix homebrew/php/php70)/bin:$PATH:$HOME/bin:/usr/l
 cp ./configs/dotfiles/.bash* ~/
 cp ./configs/dotfiles/.git* ~/
 source ~/.bash_profile
+
+echo '###'
+echo 'Install NodeJs'
+echo '###'
+wget https://nodejs.org/dist/v4.6.1/node-v4.6.1.pkg
+sudo installer -pkg node-v4.6.1.pkg -target /
+
+
+echo '###'
+echo 'Install Subline 3'
+echo '###'
+wget https://download.sublimetext.com/Sublime%20Text%20Build%203126.dmg
+sudo hdiutil attach Sublime\ Text\ Build\ 3126.dmg
+cp -a /Volumes/Sublime\ Text/Sublime\ Text.app /Applications
+sudo hdiutil detach /Volumes/Sublime\ Text/
+
+echo '###'
+echo 'NPM Install globaly gulp and bower'
+echo '###'
+npm update
+npn install -g gulp bower
