@@ -87,3 +87,6 @@ echo 'Create work dir structure'
 echo '###'
 mkdir ~/Work
 echo 'export PATH=$(brew --prefix homebrew/php/php70)/bin:$PATH:$HOME/bin:/usr/local/sbin:~/.composer/vendor/bin' >> ~/.bash_profile
+cp ./configs/dotfiles/.bash* ~/
+cp ./configs/dotfiles/.git* ~/
+source ~/.bash_profile
