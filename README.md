@@ -30,6 +30,11 @@
 * Add additional PHP packages for Symfony2/3
     * intl
     * x-debug
+* Install front-end soft globaly:
+    * [x] NodeJs
+    * [x] Gulp
+    * [x] Bower
+    
 * Install MySql
 
 
