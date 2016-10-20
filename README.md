@@ -27,6 +27,7 @@
 #### TODO List 
 * create instalation from packages file 
 * add sublime as default editor
+
 * Add additional PHP packages for Symfony2/3
     * intl
     * x-debug
@@ -34,14 +35,12 @@
     * [x] NodeJs
     * [x] Gulp
     * [x] Bower
-    
-* Install MySql
 
-
-#### List of software in general
-* Slack
-* SequelPro
-* Chrome
-* PHPStorm maybe EAP
-* [_Alfred 3_](https://www.alfredapp.com/)
-* _Skype_
+* Install other development software    
+    * [x] Install MySql
+    * [ ] Slack
+    * [ ] SequelPro
+    * [ ] Chrome
+    * [ ] PHPStorm maybe EAP
+    * [ ] [_Alfred 3_](https://www.alfredapp.com/)
+    * [ ] _Skype_
