@@ -8,8 +8,8 @@
     
 
     | Package name  |      Version      |
-    |---------------|:-----------------:|
-    | git           | @latest           |
+    |:-------------:|:-----------------:|
+    | GIT           | @latest           |
     | PHP           | v7.0              |
     | Apache        | v4.6.1            |
     | NodeJs        | @latest from NPM  |
