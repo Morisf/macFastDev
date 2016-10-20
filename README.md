@@ -29,8 +29,8 @@
 * add sublime as default editor
 
 * Add additional PHP packages for Symfony2/3
-    * intl
-    * x-debug
+    * [ ] intl
+    * [ ] x-debug
 * Install front-end soft globaly:
     * [x] NodeJs
     * [x] Gulp
