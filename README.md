@@ -13,6 +13,12 @@
     * dnsmasq
     
 
+#### How it works
+1. Clone files
+2. Open terminal
+3. run ` sh ./install.sh`
+4. give root password
+
 #### TODO List 
 * create instalation from packages file 
 * add sublime as default editor
