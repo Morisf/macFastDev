@@ -33,6 +33,8 @@ brew install dnsmasq
 brew install httpd24 --with-privileged-ports --with-http2
 brew install php70 --with-apache
 brew install mariadb100
+brew install php70-memcached
+brew install memcached
 brew install git
 brew install wget
 
@@ -90,7 +92,6 @@ mkdir ~/Work
 echo 'export PATH=$(brew --prefix homebrew/php/php70)/bin:$PATH:$HOME/bin:/usr/local/sbin:~/.composer/vendor/bin' >> ~/.bash_profile
 cp ./configs/dotfiles/.bash* ~/
 cp ./configs/dotfiles/.git* ~/
-source ~/.bash_profile
 
 echo '###'
 echo 'Install NodeJs'
@@ -112,3 +113,6 @@ echo 'NPM Install globaly gulp and bower'
 echo '###'
 npm update
 npn install -g gulp bower
+
+
+brew doctor
