@@ -1,6 +1,6 @@
 {
   "name": "Macfastdev",
   "tagline": "Short and simple script which I create to use on my job to make all mac at office with same configuration",
-  "body": "### MacOS fast dev env installation.\r\n\r\n",
+  "body": "### MacOS fast dev env installation\r\n\r\n#### What is in\r\n\r\n* install x-code\r\n* install brew\r\n* Packages \r\n    \r\n\r\n    | Package name  |      Version      |\r\n    |:-------------:|:-----------------:|\r\n    | GIT           | @latest           |\r\n    | PHP           | v7.0              |\r\n    | Apache        | v4.6.1            |\r\n    | NodeJs        | @latest from NPM  |\r\n    | Gulp          | @latest from NPM  |\r\n    | Bower         | v2.4              |\r\n    | DNSMasq       | @latest           |\r\n\r\n\r\n#### How it works\r\n1. Clone files\r\n2. Open terminal\r\n3. run ` sh ./install.sh`\r\n4. give root password\r\n\r\n#### TODO List \r\n* create instalation from packages file \r\n* add sublime as default editor\r\n\r\n* Add additional PHP packages for Symfony2/3\r\n    * [ ] intl\r\n    * [ ] x-debug\r\n* Install front-end soft globaly:\r\n    * [x] NodeJs\r\n    * [x] Gulp\r\n    * [x] Bower\r\n\r\n* Install other development software    \r\n    * [x] Install MySql\r\n    * [ ] Slack\r\n    * [ ] SequelPro\r\n    * [ ] Chrome\r\n    * [ ] PHPStorm maybe EAP\r\n    * [ ] [_Alfred 3_](https://www.alfredapp.com/)\r\n    * [ ] _Skype_\r\n",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
