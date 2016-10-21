@@ -10,6 +10,8 @@ defaults write com.apple.dock autohide-delay -float 0; # remove Dock show delay
 defaults write com.apple.dock autohide-time-modifier -float 0; # remove Dock show delay
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true; # show all file extensions
 
+killall Finder
+/System/Library/CoreServices/Finder.app
 
 
 ### Install x-code
@@ -133,5 +135,36 @@ echo 'NPM Install globaly gulp and bower'
 echo '###'
 npm update
 npn install -g gulp bower
+
+mkdir /usr/local/var/www/test
+touch /usr/local/var/www/test/index.html
+
+echo '
+<html><body><h1>Hello World!!!</h1><?php phpinfo(); ?></body></html>
+' > /usr/local/var/www/test/index.html
+
+echo '
+
+<FilesMatch .php$|.html>
+    SetHandler application/x-httpd-php
+</FilesMatch>
+Include /usr/local/etc/apache2/2.4/extra/httpd-vhosts.conf
+
+' >> /usr/local/etc/apache2/2.4/httpd.conf
+
+echo '
+<VirtualHost *:80>
+    ServerAdmin admin@localhost
+    DocumentRoot "/usr/local/var/www/test/”
+    ServerName test.dev
+    ErrorLog "/usr/local/var/log/apache2/test.dev-error_log"
+    CustomLog "/usr/local/var/log/apache2/test.dev-access_log" common
+</VirtualHost>
+
+' > /usr/local/etc/apache2/2.4/extra/httpd-vhosts.conf
+
+sudo echo '127.0.0.1    test.dev' > /private/etc/hosts
+
+ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime
 
 brew doctor
